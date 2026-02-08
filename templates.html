@@ -1,3 +1,72 @@
-<div id="templates-container" class="templates-grid"></div>
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tor Web | قالبە ناوازەکان</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="templates-page">
+    <div id="cursor"></div>
 
-<script src="templates.js"></script>
+    <header class="mini-header">
+        <div class="logo" onclick="location.href='index.html'">TOR<span>WEB</span></div>
+        <a href="index.html" class="back-link">گەڕانەوە بۆ سەرەکی ←</a>
+    </header>
+
+    <section class="templates-hero">
+        <h2 class="reveal-text">قالبێکی <span>پڕۆفیشناڵ</span> هەڵبژێرە</h2>
+        <p>هەموو قالبەکان بە نوێترین تەکنەلۆژیا و بەرزترین خێرایی دروستکراون.</p>
+    </section>
+
+    <div class="container">
+        <div class="templates-grid">
+            <div class="glass-card template-item">
+                <div class="card-badge">پێشنیارکراو</div>
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500" alt="Restaurant">
+                </div>
+                <div class="card-info">
+                    <h3>قالبى ڕێستۆرانت</h3>
+                    <p>مۆدێرن، خێرا، و گونجاو بۆ هەموو مۆبایلێک.</p>
+                    <div class="card-actions">
+                        <button class="preview-btn">نمایشی زیندوو</button>
+                        <button class="order-btn-sm">داواکردن</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card template-item">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500" alt="E-commerce">
+                </div>
+                <div class="card-info">
+                    <h3>فرۆشگای ئۆنلاین</h3>
+                    <p>سیستەمی کڕین و پارەدانی ئەلیکترۆنی ئامادەیە.</p>
+                    <div class="card-actions">
+                        <button class="preview-btn">نمایشی زیندوو</button>
+                        <button class="order-btn-sm">داواکردن</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card template-item">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=500" alt="Corporate">
+                </div>
+                <div class="card-info">
+                    <h3>کۆمپانیای تەکنەلۆژیا</h3>
+                    <p>دیزاینێکی فەرمی بۆ ناساندنی براند و خزمەتگوزارییەکان.</p>
+                    <div class="card-actions">
+                        <button class="preview-btn">نمایشی زیندوو</button>
+                        <button class="order-btn-sm">داواکردن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
