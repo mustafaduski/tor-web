@@ -1,85 +1,102 @@
 :root {
-    --main-color: #2563eb; /* شینەکا جوان */
-    --bg-color: #f8fafc;
-    --text-color: #1e293b;
+    --main-blue: #2563eb;
+    --dark-slate: #1e293b;
+    --gold: #fbbf24;
+    --bg-light: #f8fafc;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: var(--bg-light);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: linear-gradient(135deg, #1e293b, #2563eb);
+    background: linear-gradient(135deg, var(--dark-slate), var(--main-blue));
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.logo span { color: var(--gold); }
+
+.search-container {
+    text-align: center;
+    margin-top: -30px;
+}
+
+#searchInput {
+    width: 50%;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    outline: none;
 }
 
 .templates {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    padding: 40px;
+    padding: 50px;
     max-width: 1200px;
     margin: auto;
 }
 
 .card {
     background: white;
-    border-radius: 12px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: 0.3s;
     text-align: center;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
+.card:hover { transform: translateY(-10px); }
 
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+.card img { width: 100%; height: 180px; object-fit: cover; }
 
-.card h3 { padding: 15px; }
+.card h3 { margin: 15px 0 5px; color: var(--dark-slate); }
 
-button {
-    background-color: var(--main-color);
+.card p { color: #059669; font-weight: bold; margin-bottom: 15px; }
+
+.wa-btn {
+    background-color: #25d366;
     color: white;
     border: none;
-    padding: 10px 25px;
-    border-radius: 6px;
+    padding: 12px 30px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 20px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 #order-form {
-    background: #ffffff;
-    padding: 40px;
-    max-width: 600px;
-    margin: 40px auto;
-    border-radius: 12px;
+    background: #e2e8f0;
+    padding: 60px 20px;
+}
+
+.form-box {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 input, textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
-.logo {
-    font-size: 3rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: white;
-}
-
