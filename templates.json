@@ -1,0 +1,22 @@
+[
+  {"id": 1, "name": "Modern Business", "category": "Business", "price": "$230", "image": "https://picsum.photos/id/1/300/200"},
+  {"id": 2, "name": "Classic Food", "category": "Food", "price": "$200", "image": "https://picsum.photos/id/12/300/200"},
+  {"id": 3, "name": "Personal Portfolio", "category": "Personal", "price": "$150", "image": "https://picsum.photos/id/20/300/200"},
+  {"id": 4, "name": "Shop Online", "category": "Shop", "price": "$300", "image": "https://picsum.photos/id/36/300/200"},
+  {"id": 5, "name": "Fitness Center", "category": "Health", "price": "$210", "image": "https://picsum.photos/id/40/300/200"},
+  {"id": 6, "name": "Medical Center", "category": "Health", "price": "$250", "image": "https://picsum.photos/id/43/300/200"},
+  {"id": 7, "name": "Real Estate", "category": "Property", "price": "$280", "image": "https://picsum.photos/id/48/300/200"},
+  {"id": 8, "name": "Legal Firm", "category": "Legal", "price": "$240", "image": "https://picsum.photos/id/60/300/200"},
+  {"id": 9, "name": "Photography", "category": "Creative", "price": "$180", "image": "https://picsum.photos/id/64/300/200"},
+  {"id": 10, "name": "Startup Landing", "category": "Tech", "price": "$190", "image": "https://picsum.photos/id/80/300/200"},
+  {"id": 11, "name": "Education", "category": "School", "price": "$220", "image": "https://picsum.photos/id/90/300/200"},
+  {"id": 12, "name": "Blog News", "category": "News", "price": "$120", "image": "https://picsum.photos/id/100/300/200"},
+  {"id": 13, "name": "Coffee Brand", "category": "Food", "price": "$160", "image": "https://picsum.photos/id/106/300/200"},
+  {"id": 14, "name": "Hotel Travel", "category": "Travel", "price": "$270", "image": "https://picsum.photos/id/122/300/200"},
+  {"id": 15, "name": "Architecture", "category": "Design", "price": "$230", "image": "https://picsum.photos/id/142/300/200"},
+  {"id": 16, "name": "Event Pro", "category": "Events", "price": "$215", "image": "https://picsum.photos/id/160/300/200"},
+  {"id": 17, "name": "App Promo", "category": "Tech", "price": "$180", "image": "https://picsum.photos/id/180/300/200"},
+  {"id": 18, "name": "Consult Agency", "category": "Business", "price": "$250", "image": "https://picsum.photos/id/192/300/200"},
+  {"id": 19, "name": "Auto Repair", "category": "Services", "price": "$195", "image": "https://picsum.photos/id/183/300/200"},
+  {"id": 20, "name": "Fashion Hub", "category": "Shop", "price": "$260", "image": "https://picsum.photos/id/225/300/200"}
+]
