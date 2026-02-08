@@ -2,39 +2,39 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Web Service - قالبێن مە</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tor Web | دروستکرنا وێب سایتان</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>خزمەتگوزاریا دروستکرنا وێب سایتان</h1>
-        <p>قالبی هەلبژێرە و بۆ مە بفرێژە دا بۆ تە جێبەجێ بکەین</p>
+        <div class="logo"><span>Tor</span>Web</div>
+        <p>پەنجەرا تە بەرەڤ جیهانا دیجیتاڵ</p>
     </header>
 
-    <section class="templates">
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Template 1">
-            <h3>وێب سایتێ بازرگانی</h3>
-            <button onclick="selectTemplate('Business Template')">هەلبژارتن</button>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Template 2">
-            <h3>وێب سایتێ خوارنگەهێ</h3>
-            <button onclick="selectTemplate('Restaurant Template')">هەلبژارتن</button>
-        </div>
+    <section class="search-container">
+        <input type="text" id="searchInput" onkeyup="searchTemplates()" placeholder="ل قالبی بگەڕیێ... (بۆ نموونە: بازرگانی، خوارنگەهـ)">
     </section>
+
+    <main class="templates" id="templateList">
+        </main>
 
     <section id="order-form">
-        <h2>داخوازیێ بفرێژە</h2>
-        <form id="webForm">
-            <input type="text" id="tempName" placeholder="قالبی هەلبژارتی" readonly>
-            <input type="text" placeholder="ناڤێ تە" required>
-            <input type="tel" placeholder="ژمارا تەلەفۆنێ" required>
-            <textarea placeholder="تێبینیێن زێدە"></textarea>
-            <button type="submit">بۆ مە بفرێژە</button>
-        </form>
+        <div class="form-box">
+            <h2>داخوازیێ بفرێژە</h2>
+            <form id="webForm">
+                <input type="text" id="tempName" placeholder="ناڤێ قالبی هەلبژارتی" readonly>
+                <input type="text" id="clientName" placeholder="ناڤێ تە" required>
+                <textarea id="clientNote" placeholder="تێبینیێن زێدە (وەک رەنگ، زمان، ...)"></textarea>
+                <button type="button" class="wa-btn" onclick="sendToWhatsApp()">بۆ مە بفرێژە ب ڕێکا WhatsApp</button>
+            </form>
+        </div>
     </section>
+
+    <footer>
+        <p>© 2026 Tor Web - هەمی ماف پاراستینە</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
