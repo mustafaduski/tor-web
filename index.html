@@ -2,43 +2,27 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tor Web | وێب سایتان</title>
+    <title>Tor Web | وێب سایتی خەونەکانت لێرە هەڵبژێرە</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <div class="logo"><span>Tor</span>Web</div>
-        <p>پەنجەرا تە بەرەڤ جیهانا دیجیتاڵ</p>
+        <nav>
+            <div class="logo">Tor Web</div>
+            <ul>
+                <li><a href="#home">سەرەکی</a></li>
+                <li><a href="templates.html">قالبەکان</a></li>
+                <li><a href="#pricing">نرخەکان</a></li>
+                <li><a href="#contact">پەیوەندی</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="search-container">
-        <input type="text" id="searchInput" onkeyup="searchTemplates()" placeholder="ل قالبی بگەڕیێ...">
+    <section id="hero">
+        <h1>بیزنسەکەت ببە ناو جیهانی دیجیتاڵەوە</h1>
+        <p>باشترین قالب هەڵبژێرە و ئەرکی دروستکردن و پاراستنی بخە ئەستۆی ئێمە.</p>
+        <button onclick="location.href='templates.html'">بینینی قالبەکان</button>
     </section>
 
-    <section class="filter-container">
-        <button class="filter-btn" onclick="filterByCategory('all')">هەمی</button>
-        <button class="filter-btn" onclick="filterByCategory('Business')">Modern Business</button>
-        <button class="filter-btn" onclick="filterByCategory('Food')">خوارنگەهـ</button>
-        <button class="filter-btn" onclick="filterByCategory('Tech')">تەکنەلۆژیا</button>
-    </section>
-
-    <main class="templates" id="templateList">
-        </main>
-
-    <section id="order-form">
-        <div class="form-box">
-            <h2>داخوازیێ بفرێژە</h2>
-            <form id="webForm">
-                <input type="text" id="tempName" placeholder="ناڤێ قالبێ هەلبژارتی" readonly>
-                <input type="text" id="clientName" placeholder="ناڤێ تە" required>
-                <textarea id="clientNote" placeholder="تێبینیێن زێدە"></textarea>
-                <button type="button" class="wa-btn" onclick="sendToWhatsApp()">بۆ مە بفرێژە ب ڕێکا WhatsApp</button>
-            </form>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
