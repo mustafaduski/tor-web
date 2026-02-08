@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tor Web | دروستکرنا وێب سایتان</title>
+    <title>Tor Web | وێب سایتان</title>
+    
+    <meta name="description" content="Tor Web - باشترین قالبێن وێبێ">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +17,7 @@
     </header>
 
     <section class="search-container">
-        <input type="text" id="searchInput" onkeyup="searchTemplates()" placeholder="ل قالبی بگەڕیێ... (بۆ نموونە: بازرگانی، خوارنگەهـ)">
+        <input type="text" id="searchInput" onkeyup="searchTemplates()" placeholder="ل قالبی بگەڕیێ...">
     </section>
 
     <main class="templates" id="templateList">
@@ -24,17 +27,13 @@
         <div class="form-box">
             <h2>داخوازیێ بفرێژە</h2>
             <form id="webForm">
-                <input type="text" id="tempName" placeholder="ناڤێ قالبی هەلبژارتی" readonly>
+                <input type="text" id="tempName" placeholder="ناڤێ قالبێ هەلبژارتی" readonly>
                 <input type="text" id="clientName" placeholder="ناڤێ تە" required>
-                <textarea id="clientNote" placeholder="تێبینیێن زێدە (وەک رەنگ، زمان، ...)"></textarea>
+                <textarea id="clientNote" placeholder="تێبینیێن زێدە"></textarea>
                 <button type="button" class="wa-btn" onclick="sendToWhatsApp()">بۆ مە بفرێژە ب ڕێکا WhatsApp</button>
             </form>
         </div>
     </section>
-
-    <footer>
-        <p>© 2026 Tor Web - هەمی ماف پاراستینە</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
