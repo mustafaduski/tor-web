@@ -41,7 +41,7 @@ function selectTemplate(name) {
 }
 
 function sendToWhatsApp() {
-    let myNumber = "964750XXXXXXX"; // ژمارا خۆ لێرە دانێ
+    let myNumber = "9647502293413"; // ژمارا خۆ لێرە دانێ
     let template = document.getElementById('tempName').value;
     let name = document.getElementById('clientName').value;
     let note = document.getElementById('clientNote').value;
