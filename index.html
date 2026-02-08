@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tor Web | وێب سایتان</title>
-    
-    <meta name="description" content="Tor Web - باشترین قالبێن وێبێ">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +15,13 @@
 
     <section class="search-container">
         <input type="text" id="searchInput" onkeyup="searchTemplates()" placeholder="ل قالبی بگەڕیێ...">
+    </section>
+
+    <section class="filter-container">
+        <button class="filter-btn" onclick="filterByCategory('all')">هەمی</button>
+        <button class="filter-btn" onclick="filterByCategory('Business')">Modern Business</button>
+        <button class="filter-btn" onclick="filterByCategory('Food')">خوارنگەهـ</button>
+        <button class="filter-btn" onclick="filterByCategory('Tech')">تەکنەلۆژیا</button>
     </section>
 
     <main class="templates" id="templateList">
