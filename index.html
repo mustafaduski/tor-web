@@ -2,27 +2,42 @@
 <html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Tor Web | وێب سایتی خەونەکانت لێرە هەڵبژێرە</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tor Web | Next-Gen Web Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div id="cursor"></div>
+
     <header>
+        <div class="logo">TOR<span>WEB</span></div>
         <nav>
-            <div class="logo">Tor Web</div>
             <ul>
-                <li><a href="#home">سەرەکی</a></li>
-                <li><a href="templates.html">قالبەکان</a></li>
-                <li><a href="#pricing">نرخەکان</a></li>
-                <li><a href="#contact">پەیوەندی</a></li>
+                <li><a href="#" class="nav-link">سەرەکی</a></li>
+                <li><a href="#" class="nav-link">قالبەکان</a></li>
+                <li><a href="#" class="nav-link">پۆرتفۆلیۆ</a></li>
+                <li><button class="btn-contact">دەستپێبکە</button></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <h1>بیزنسەکەت ببە ناو جیهانی دیجیتاڵەوە</h1>
-        <p>باشترین قالب هەڵبژێرە و ئەرکی دروستکردن و پاراستنی بخە ئەستۆی ئێمە.</p>
-        <button onclick="location.href='templates.html'">بینینی قالبەکان</button>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="reveal-text">داهاتووی بزنسەکەت <span>دیجیتاڵییە</span></h1>
+                <p class="fade-in">ئێمە وێب سایت تەنها دروست ناکەین، ئێمە ئەزموونێکی بینراوی بێ وێنە بۆ کڕیارەکانت دەخولقێنین.</p>
+                <div class="hero-btns">
+                    <button class="main-btn">بینینی قالبەکان</button>
+                    <button class="secondary-btn">ڕاوێژی بێبەرامبەر</button>
+                </div>
+            </div>
+            <div class="glow-sphere"></div>
+        </section>
+    </main>
 
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
