@@ -1,22 +1,142 @@
 [
-  {"id": 1, "name": "Modern Business", "category": "Business", "price": "$230", "image": "https://picsum.photos/id/1/300/200"},
-  {"id": 2, "name": "Classic Food", "category": "Food", "price": "$200", "image": "https://picsum.photos/id/12/300/200"},
-  {"id": 3, "name": "Personal Portfolio", "category": "Personal", "price": "$150", "image": "https://picsum.photos/id/20/300/200"},
-  {"id": 4, "name": "Shop Online", "category": "Shop", "price": "$300", "image": "https://picsum.photos/id/36/300/200"},
-  {"id": 5, "name": "Fitness Center", "category": "Health", "price": "$210", "image": "https://picsum.photos/id/40/300/200"},
-  {"id": 6, "name": "Medical Center", "category": "Health", "price": "$250", "image": "https://picsum.photos/id/43/300/200"},
-  {"id": 7, "name": "Real Estate", "category": "Property", "price": "$280", "image": "https://picsum.photos/id/48/300/200"},
-  {"id": 8, "name": "Legal Firm", "category": "Legal", "price": "$240", "image": "https://picsum.photos/id/60/300/200"},
-  {"id": 9, "name": "Photography", "category": "Creative", "price": "$180", "image": "https://picsum.photos/id/64/300/200"},
-  {"id": 10, "name": "Startup Landing", "category": "Tech", "price": "$190", "image": "https://picsum.photos/id/80/300/200"},
-  {"id": 11, "name": "Education", "category": "School", "price": "$220", "image": "https://picsum.photos/id/90/300/200"},
-  {"id": 12, "name": "Blog News", "category": "News", "price": "$120", "image": "https://picsum.photos/id/100/300/200"},
-  {"id": 13, "name": "Coffee Brand", "category": "Food", "price": "$160", "image": "https://picsum.photos/id/106/300/200"},
-  {"id": 14, "name": "Hotel Travel", "category": "Travel", "price": "$270", "image": "https://picsum.photos/id/122/300/200"},
-  {"id": 15, "name": "Architecture", "category": "Design", "price": "$230", "image": "https://picsum.photos/id/142/300/200"},
-  {"id": 16, "name": "Event Pro", "category": "Events", "price": "$215", "image": "https://picsum.photos/id/160/300/200"},
-  {"id": 17, "name": "App Promo", "category": "Tech", "price": "$180", "image": "https://picsum.photos/id/180/300/200"},
-  {"id": 18, "name": "Consult Agency", "category": "Business", "price": "$250", "image": "https://picsum.photos/id/192/300/200"},
-  {"id": 19, "name": "Auto Repair", "category": "Services", "price": "$195", "image": "https://picsum.photos/id/183/300/200"},
-  {"id": 20, "name": "Fashion Hub", "category": "Shop", "price": "$260", "image": "https://picsum.photos/id/225/300/200"}
+  {
+    "id": 1,
+    "name": "Corporate Blue Pro",
+    "category": "Business",
+    "price": "$230",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500"
+  },
+  {
+    "id": 2,
+    "name": "Creative Agency Web",
+    "category": "Business",
+    "price": "$230",
+    "image": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=500"
+  },
+  {
+    "id": 3,
+    "name": "Modern Law Firm",
+    "category": "Business",
+    "price": "$230",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500"
+  },
+  {
+    "id": 4,
+    "name": "Startup Landing Page",
+    "category": "Tech",
+    "price": "$250",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500"
+  },
+  {
+    "id": 5,
+    "name": "Luxury Restaurant",
+    "category": "Food",
+    "price": "$200",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500"
+  },
+  {
+    "id": 6,
+    "name": "Coffee Shop UI",
+    "category": "Food",
+    "price": "$180",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500"
+  },
+  {
+    "id": 7,
+    "name": "Fast Food Delivery",
+    "category": "Food",
+    "price": "$190",
+    "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=500"
+  },
+  {
+    "id": 8,
+    "name": "App Showcase Site",
+    "category": "Tech",
+    "price": "$210",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500"
+  },
+  {
+    "id": 9,
+    "name": "Marketing Agency",
+    "category": "Business",
+    "price": "$230",
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500"
+  },
+  {
+    "id": 10,
+    "name": "Gym & Fitness Web",
+    "category": "Tech",
+    "price": "$220",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500"
+  },
+  {
+    "id": 11,
+    "name": "Medical Center",
+    "category": "Business",
+    "price": "$240",
+    "image": "https://images.unsplash.com/photo-1505751172107-5739a00723a5?w=500"
+  },
+  {
+    "id": 12,
+    "name": "Real Estate UI",
+    "category": "Business",
+    "price": "$260",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500"
+  },
+  {
+    "id": 13,
+    "name": "Software SaaS",
+    "category": "Tech",
+    "price": "$250",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500"
+  },
+  {
+    "id": 14,
+    "name": "E-commerce Store",
+    "category": "Tech",
+    "price": "$300",
+    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500"
+  },
+  {
+    "id": 15,
+    "name": "Bakery Website",
+    "category": "Food",
+    "price": "$170",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500"
+  },
+  {
+    "id": 16,
+    "name": "Education Portal",
+    "category": "Tech",
+    "price": "$230",
+    "image": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500"
+  },
+  {
+    "id": 17,
+    "name": "Consulting Group",
+    "category": "Business",
+    "price": "$230",
+    "image": "https://images.unsplash.com/photo-1454165833767-13143895960b?w=500"
+  },
+  {
+    "id": 18,
+    "name": "Pizza House",
+    "category": "Food",
+    "price": "$180",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"
+  },
+  {
+    "id": 19,
+    "name": "Gaming Community",
+    "category": "Tech",
+    "price": "$220",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500"
+  },
+  {
+    "id": 20,
+    "name": "Architecture Portfolio",
+    "category": "Business",
+    "price": "$240",
+    "image": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=500"
+  }
 ]
