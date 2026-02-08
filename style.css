@@ -1,102 +1,21 @@
-:root {
-    --main-blue: #2563eb;
-    --dark-slate: #1e293b;
-    --gold: #fbbf24;
-    --bg-light: #f8fafc;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: var(--bg-light);
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: linear-gradient(135deg, var(--dark-slate), var(--main-blue));
-    color: white;
+.filter-container {
     text-align: center;
-    padding: 60px 20px;
+    margin: 20px 0;
 }
 
-.logo {
-    font-size: 3.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.logo span { color: var(--gold); }
-
-.search-container {
-    text-align: center;
-    margin-top: -30px;
-}
-
-#searchInput {
-    width: 50%;
-    padding: 15px 25px;
-    border-radius: 50px;
-    border: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    font-size: 1rem;
-    outline: none;
-}
-
-.templates {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    transition: 0.3s;
-    text-align: center;
-}
-
-.card:hover { transform: translateY(-10px); }
-
-.card img { width: 100%; height: 180px; object-fit: cover; }
-
-.card h3 { margin: 15px 0 5px; color: var(--dark-slate); }
-
-.card p { color: #059669; font-weight: bold; margin-bottom: 15px; }
-
-.wa-btn {
-    background-color: #25d366;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 8px;
+.filter-btn {
+    background-color: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 1rem;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-#order-form {
-    background: #e2e8f0;
-    padding: 60px 20px;
-}
-
-.form-box {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    box-sizing: border-box;
+.filter-btn:hover {
+    background-color: #2563eb;
+    color: white;
 }
