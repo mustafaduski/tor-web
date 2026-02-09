@@ -112,3 +112,35 @@ nav ul li:hover {
     display: block;
     width: 350px;
 }
+/* --- کۆد بۆ ڕێکخستنی مۆبایل --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* مێنیۆکە دەبێتە ستوونی */
+        padding: 15px;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap; /* ئەگەر مێنیۆکە زۆر بوو، دەچێتە ڕیزێکی تر */
+        justify-content: center;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse; /* وێنەکە دەچێتە سەرەوە و نووسینەکە خوارەوە */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .main-title {
+        font-size: 45px; /* بچووککردنەوەی فۆنت بۆ ئەوەی لە شاشەی مۆبایل جێببێتەوە */
+    }
+
+    .desc {
+        margin: 0 auto 20px auto; /* ڕێکخستنی دەقەکە لە ناوەڕاست */
+    }
+
+    .yellow-border img {
+        width: 250px; /* بچووککردنەوەی وێنەکە بۆ مۆبایل */
+    }
+}
