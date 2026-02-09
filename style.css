@@ -1,146 +1,126 @@
+:root {
+    --primary-color: #00ff88; /* ڕەنگی سەوزە درەوشاوەکە */
+    --accent-color: #ffaa00;  /* ڕەنگی زەردی چوارچێوەکە */
+    --bg-dark: #080808;      /* ڕەنگی ڕەشی قووڵ */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #0d0d0d; /* ڕەنگی ڕەشی پشتەوە وەک وێنەکە */
+    background-color: var(--bg-dark);
     color: white;
-    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
-span {
-    color: #00ff88; /* ڕەنگی سەوزە درەوشاوەکە */
-}
-
-/* مێنیۆی سەرەوە */
+/* Header Section */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 25px 8%;
     align-items: center;
+    padding: 30px 10%;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 900;
     letter-spacing: 2px;
 }
+
+.logo span { color: var(--primary-color); }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 30px;
 }
 
 nav ul li {
-    cursor: pointer;
     font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
     transition: 0.3s;
 }
 
-nav ul li:hover {
-    color: #00ff88;
-}
+nav ul li:hover { color: var(--primary-color); }
 
 .btn-cv {
-    background: #00ff88;
+    background: var(--primary-color);
+    color: black;
     border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* بەشی سەرەکی - Hero */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-}
-
-.hero-container {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    max-width: 1200px;
-}
-
-.sub-title {
-    color: #00ff88;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.main-title {
-    font-size: 80px;
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.desc {
-    color: #888;
-    max-width: 400px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.btn-main {
-    background: #00ff88;
-    border: none;
-    padding: 15px 35px;
+    padding: 12px 25px;
     border-radius: 30px;
     font-weight: bold;
-    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
 }
 
-/* وێنەکە و چوارچێوە زەردەکە */
-.image-side {
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 80vh;
+}
+
+.hero-text { flex: 1; }
+
+.hero-text h4 {
+    color: var(--primary-color);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1 {
+    font-size: clamp(40px, 8vw, 90px); /* قەبارەی فۆنتەکە بەگوێرەی شاشە دەگۆڕێت */
+    line-height: 0.9;
+    margin-bottom: 25px;
+}
+
+.hero-text h1 span {
+    -webkit-text-stroke: 1px white; /* بۆ ئەوەی دەوری نووسینەکە سپی بێت */
+    color: transparent;
+}
+
+.hero-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
-.yellow-border {
-    border: 8px solid #f39c12; /* چوارچێوە زەردەکە وەک وێنەکە */
+/* چوارچێوە زەردەکە ڕێک وەک وێنەکە */
+.image-frame {
+    border: 10px solid var(--accent-color);
     border-radius: 50px;
+    padding: 0;
+    position: relative;
+    width: 380px;
+    height: 480px;
     overflow: hidden;
 }
 
-.yellow-border img {
-    display: block;
-    width: 350px;
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%); /* وێنەکە دەکاتە ڕەش و سپی وەک ناو وێنەکە */
 }
-/* --- کۆد بۆ ڕێکخستنی مۆبایل --- */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* مێنیۆکە دەبێتە ستوونی */
-        padding: 15px;
-        gap: 15px;
-    }
 
-    nav ul {
-        gap: 10px;
-        flex-wrap: wrap; /* ئەگەر مێنیۆکە زۆر بوو، دەچێتە ڕیزێکی تر */
-        justify-content: center;
-    }
-
-    .hero-container {
-        flex-direction: column-reverse; /* وێنەکە دەچێتە سەرەوە و نووسینەکە خوارەوە */
+/* بۆ مۆبایل */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
         text-align: center;
-        gap: 30px;
     }
-
-    .main-title {
-        font-size: 45px; /* بچووککردنەوەی فۆنت بۆ ئەوەی لە شاشەی مۆبایل جێببێتەوە */
-    }
-
-    .desc {
-        margin: 0 auto 20px auto; /* ڕێکخستنی دەقەکە لە ناوەڕاست */
-    }
-
-    .yellow-border img {
-        width: 250px; /* بچووککردنەوەی وێنەکە بۆ مۆبایل */
+    .image-frame {
+        width: 300px;
+        height: 400px;
+        margin-top: 50px;
     }
 }
